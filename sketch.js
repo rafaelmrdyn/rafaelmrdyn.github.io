@@ -18,16 +18,17 @@ function preload() {
 }
 
 function setup() {
-  const canvas = createCanvas(window.innerWidth - 18, window.innerHeight);
+  const canvas = createCanvas(window.innerWidth, window.innerHeight);
   engine = Engine.create();
   world = engine.world;
   ground = new Ground(width / 2, height - 10, width, 20);
-  for (let i = 0; i < 3; i++) {
-    boxes[i] = new Box(450, 300 - i * 75, 84, 100);
+  for (let i = 0; i < 7; i++) {
+    let w = i%2 ? window.innerWidth - 400 : window.innerWidth - 300
+    boxes[i] = new Box(w, 300 - i * 75, 84, 100);
   }
-  rafo = new Rafo(200, 200, 30);
+  rafo = new Rafo(200, window.innerHeight - 400, 30);
 
-  slingshot = new SlingShot(150, 300, rafo.body);
+  slingshot = new SlingShot(300, window.innerHeight - 200, rafo.body);
 
   const mouse = Mouse.create(canvas.elt);
   const options = {
