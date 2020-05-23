@@ -18,7 +18,7 @@ class Box {
     fill(255);
     rectMode(CENTER);
     imageMode(CENTER);
-    image(boxImg, 0, 0, this.w, this.h);
+    image(jsImg, 0, 0, this.w, this.h);
     pop();
   }
 }
