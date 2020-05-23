@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="200" viewBox="0 0 150 200">
+  <defs>
+    <clipPath id="clip-angular">
+      <rect width="150" height="200"/>
+    </clipPath>
+  </defs>
+  <g id="angular" clip-path="url(#clip-angular)">
+    <rect width="150" height="200" fill="#e23237"/>
+    <g id="angular-icon-1" transform="translate(31.9 53.303)">
+      <path id="Path_7" data-name="Path 7" d="M.1,15.807,42.509.7,86.06,15.539,79.008,71.648l-36.5,20.214L6.581,71.916Z" transform="translate(0)" fill="#e23237"/>
+      <path id="Path_8" data-name="Path 8" d="M169.459,15.539,125.908.7V91.862l36.5-20.18,7.052-56.143Z" transform="translate(-83.399)" fill="#b52e31"/>
+      <path id="Path_9" data-name="Path 9" d="M74.14,32.274l-26.426,58.8,9.872-.168,5.306-13.264H86.6l5.809,13.431,9.435.168L74.14,32.274Zm.067,18.837,8.932,18.669H66.35l7.858-18.669Z" transform="translate(-31.564 -20.933)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
