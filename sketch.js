@@ -57,7 +57,7 @@ function setup() {
   ground = new Ground(width / 2, height - 10, width, 20);
   for (let i = 0; i < 7; i++) {
     let w = i%2 ? window.innerWidth - 400 : window.innerWidth - 300
-    boxes[i] = new Box(w, 300 - i * 75, 84, 100);
+    boxes[i] = new Box(w, 300 - i * 75, 84, 100, i);
   }
 
   rafo = new Rafo(200, window.innerHeight - 400, 30);

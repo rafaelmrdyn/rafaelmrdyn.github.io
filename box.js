@@ -1,5 +1,5 @@
 class Box {
-  constructor(x, y, w, h) {
+  constructor(x, y, w, h, num) {
     const options = {
       restitution: 0.5
     };
@@ -7,11 +7,12 @@ class Box {
     Matter.World.add(world, this.body);
     this.w = w;
     this.h = h;
+    this.num = num;
   }
 
   get img() {
     const imgs = [jsImg, ethImg];
-    return imgs[Math.floor(Math.random() * 2)];
+    return imgs[this.num % 2];
   }
 
   show() {
