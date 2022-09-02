@@ -9,6 +9,11 @@ class Box {
     this.h = h;
   }
 
+  get img() {
+    const imgs = [jsImg, ethImg];
+    return imgs[Math.floor(Math.random() * 2)];
+  }
+
   show() {
     const pos = this.body.position;
     const angle = this.body.angle;
@@ -18,7 +23,7 @@ class Box {
     fill(255);
     rectMode(CENTER);
     imageMode(CENTER);
-    image(jsImg, 0, 0, this.w, this.h);
+    image(this.img, 0, 0, this.w, this.h);
     pop();
   }
 }

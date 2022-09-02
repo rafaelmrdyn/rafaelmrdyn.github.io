@@ -10,6 +10,7 @@ let slingshot;
 function preload() {
   dotImg = loadImage('/rafo.png');
   jsImg = loadImage('/logo/js.svg');
+  ethImg = loadImage('/logo/eth.svg');
   bkgImg = loadImage('/black.png');
   letter = {
     'a': loadImage('/letters/a.svg'),
